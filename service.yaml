@@ -12,6 +12,6 @@ spec:
     targetPort: 8000
   selector:
     app: java-springboot
-  type: Nodeport
+  type: NodePort
 status:
   loadBalancer: {}
