@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: java-springboot
+  name: java-springboot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: java-springboot
+  template:
+    metadata:
+      labels:
+        app: java-springboot
+    spec:
+      containers:
+      - image: selmi1999/java-springboot
+        name: java-springboot
